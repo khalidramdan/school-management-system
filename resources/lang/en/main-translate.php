@@ -3,6 +3,7 @@
 
 return  [
     
-"Dashboard"=> "Dashboard"
+"Dashboard"  => "Dashboard",
+"Grades"  =>    "Grades" 
 
 ];

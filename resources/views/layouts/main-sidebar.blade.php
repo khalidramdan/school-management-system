@@ -26,7 +26,7 @@
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">
                             <div class="pull-left"><i class="ti-palette"></i><span
-                                    class="right-nav-text">Elements</span></div>
+                                    class="right-nav-text">{{ trans('main-translate.Grades') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
