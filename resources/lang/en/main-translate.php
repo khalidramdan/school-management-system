@@ -4,6 +4,6 @@
 return  [
     
 "Dashboard"  => "Dashboard",
-"Grades"  =>    "Grades" 
+"Language"  =>  "Choose Your Language"
 
 ];
