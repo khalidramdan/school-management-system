@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\Grades\GradeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +30,7 @@ Route::group(
     function () {
         
         Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-        Route::resource('grade', 'GradeController');
+        Route::resource('Grades', GradeController::class);
     }
 );
 
