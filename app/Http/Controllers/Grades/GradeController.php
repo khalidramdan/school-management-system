@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Grades;
 use Exception;
 use App\Models\Grade;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Requests\GradeRequest;
 use App\Http\Controllers\Controller;
 
@@ -35,7 +36,11 @@ class GradeController extends Controller
     {
         try {
             //
-
+            // dd($request);
+           $Grade_builder = DB::table('grades')->where('Name->ar',$request->name_ar)->orwhere('Name->en',$request->name_en);
+          if($Grade_builder->exists()){
+            return redirect()->back()->withErrors(trans('Grades-translate.exist'));
+          }
             $validate = $request->validated();
             $Grade = new Grade();
 

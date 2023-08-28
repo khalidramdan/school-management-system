@@ -24,4 +24,5 @@ return  [
     "message_delete" =>    "Data has been deleted successfully!",
     'YES' => 'YES',
     'NO' => 'NO',
+    "exist" =>      "Please Try Again This Grade Already Exist."
 ];
